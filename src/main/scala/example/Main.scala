@@ -1,3 +1,8 @@
 object Main extends App {
-  println("Hello, World!")
+  private def myAbs(n: Int): Int =
+    if (n < 0) -n
+    else n
+
+  val num = myAbs(-118)
+  println(s"Hello, World! my $num")
 }
