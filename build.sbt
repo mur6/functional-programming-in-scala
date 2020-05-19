@@ -1,5 +1,9 @@
 scalaVersion := "2.13.2"
+val awsVersion            = "2.10.79"
 
-// Want to use a published library in your project?
-// You can define other libraries as dependencies in your build like this:
-// libraryDependencies += "org.typelevel" %% "cats-core" % "1.6.0"
+libraryDependencies ++= Seq(
+  "org.scala-lang.modules" %% "scala-java8-compat" % "0.9.1",
+  "software.amazon.awssdk" % "dynamodb"            % awsVersion,
+  "software.amazon.awssdk" % "secretsmanager"      % awsVersion,
+  "software.amazon.awssdk" % "s3"                  % awsVersion
+)

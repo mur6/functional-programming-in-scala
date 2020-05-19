@@ -1,5 +1,3 @@
-import java.lang.Math
-
 case class TwoNumbers(num1: Integer, num2: Integer) {
   val absInteger1 = Math.abs(num1)
   val absInteger2 = Math.abs(num2)
